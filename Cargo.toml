@@ -1,0 +1,26 @@
+[package]
+name = "behave"
+version = "0.1.0"
+edition = "2021"
+authors = ["Jan Piotrzkowski <piotrzkowski.dev@gmail.com>"]
+license = "Apache-2.0"
+description = "Rust library that provides the simpliest DSL to express and test the behavior of Rust code."
+repository = "https://github.com/babilonczyk/behave"
+homepage = "https://github.com/babilonczyk/behave"
+readme = "README.md"
+keywords = ["testing", "tdd", "rspec", "bdd", "darian"]
+categories = [
+    "development-tools",
+    "development-tools::testing"
+]
+
+[lib]
+name = "behave"
+path = "src/lib.rs"
+crate-type = ["rlib"]
+
+[dependencies]
+
+[features]
+default = ["core"]
+core = []
